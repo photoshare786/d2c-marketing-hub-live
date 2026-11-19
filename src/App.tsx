@@ -14,6 +14,7 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { CollaborateSection } from './components/CollaborateSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { NeonCursor } from './components/NeonCursor';
 
 export default function App() {
   const [introComplete, setIntroComplete] = useState<boolean>(() => {
@@ -168,6 +169,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#111111] text-white">
+      <NeonCursor />
+
       {!introComplete && (
         <IntroCurtain onComplete={() => setIntroComplete(true)} />
       )}

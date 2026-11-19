@@ -76,3 +76,24 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b6ff4a;
 }
+
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+  html.has-neon-cursor,
+  html.has-neon-cursor * {
+    cursor: none !important;
+  }
+}
+
+.neon-cursor-dot {
+  box-shadow:
+    0 0 0 1px rgba(17, 17, 17, 0.25),
+    0 0 8px rgba(182, 255, 59, 0.65);
+}
+
+.neon-cursor-ring {
+  box-shadow:
+    0 0 14px rgba(182, 255, 59, 0.35),
+    inset 0 0 8px rgba(182, 255, 59, 0.12),
+    0 0 1px rgba(17, 17, 17, 0.28);
+}
+
